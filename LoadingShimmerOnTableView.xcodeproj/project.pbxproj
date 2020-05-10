@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32C10D2BDA49C30107AD309E /* Pods_LoadingShimmerOnTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD264507ADCF215ADB2841E /* Pods_LoadingShimmerOnTableView.framework */; };
 		CB20B8142467E84600A68227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB20B8132467E84600A68227 /* AppDelegate.swift */; };
 		CB20B8162467E84600A68227 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB20B8152467E84600A68227 /* SceneDelegate.swift */; };
 		CB20B8182467E84600A68227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB20B8172467E84600A68227 /* ViewController.swift */; };
 		CB20B81B2467E84600A68227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB20B8192467E84600A68227 /* Main.storyboard */; };
 		CB20B81D2467E84900A68227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB20B81C2467E84900A68227 /* Assets.xcassets */; };
 		CB20B8202467E84900A68227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB20B81E2467E84900A68227 /* LaunchScreen.storyboard */; };
+		CB20B8282467EA2300A68227 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB20B8272467EA2300A68227 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67CC16A63AD6BCF41FB82435 /* Pods-LoadingShimmerOnTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadingShimmerOnTableView.debug.xcconfig"; path = "Target Support Files/Pods-LoadingShimmerOnTableView/Pods-LoadingShimmerOnTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		8CD264507ADCF215ADB2841E /* Pods_LoadingShimmerOnTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoadingShimmerOnTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D8ABB241EF54D81631E5BDD /* Pods-LoadingShimmerOnTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoadingShimmerOnTableView.release.xcconfig"; path = "Target Support Files/Pods-LoadingShimmerOnTableView/Pods-LoadingShimmerOnTableView.release.xcconfig"; sourceTree = "<group>"; };
 		CB20B8102467E84600A68227 /* LoadingShimmerOnTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingShimmerOnTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB20B8132467E84600A68227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB20B8152467E84600A68227 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		CB20B81C2467E84900A68227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB20B81F2467E84900A68227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB20B8212467E84900A68227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB20B8272467EA2300A68227 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C10D2BDA49C30107AD309E /* Pods_LoadingShimmerOnTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66381A93F033FEAC22B4253D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CD264507ADCF215ADB2841E /* Pods_LoadingShimmerOnTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C53F01C794B9A673862E1CC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67CC16A63AD6BCF41FB82435 /* Pods-LoadingShimmerOnTableView.debug.xcconfig */,
+				8D8ABB241EF54D81631E5BDD /* Pods-LoadingShimmerOnTableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CB20B8072467E84600A68227 = {
 			isa = PBXGroup;
 			children = (
 				CB20B8122467E84600A68227 /* LoadingShimmerOnTableView */,
 				CB20B8112467E84600A68227 /* Products */,
+				C53F01C794B9A673862E1CC5 /* Pods */,
+				66381A93F033FEAC22B4253D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				CB20B8132467E84600A68227 /* AppDelegate.swift */,
 				CB20B8152467E84600A68227 /* SceneDelegate.swift */,
 				CB20B8172467E84600A68227 /* ViewController.swift */,
+				CB20B8272467EA2300A68227 /* CustomTableViewCell.swift */,
 				CB20B8192467E84600A68227 /* Main.storyboard */,
 				CB20B81C2467E84900A68227 /* Assets.xcassets */,
 				CB20B81E2467E84900A68227 /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB20B8242467E84900A68227 /* Build configuration list for PBXNativeTarget "LoadingShimmerOnTableView" */;
 			buildPhases = (
+				E255E9EF933B82E1EF1E83A1 /* [CP] Check Pods Manifest.lock */,
 				CB20B80C2467E84600A68227 /* Sources */,
 				CB20B80D2467E84600A68227 /* Frameworks */,
 				CB20B80E2467E84600A68227 /* Resources */,
+				AAD027BE2FA1F63006DE4270 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AAD027BE2FA1F63006DE4270 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoadingShimmerOnTableView/Pods-LoadingShimmerOnTableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoadingShimmerOnTableView/Pods-LoadingShimmerOnTableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoadingShimmerOnTableView/Pods-LoadingShimmerOnTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E255E9EF933B82E1EF1E83A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoadingShimmerOnTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB20B80C2467E84600A68227 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				CB20B8182467E84600A68227 /* ViewController.swift in Sources */,
 				CB20B8142467E84600A68227 /* AppDelegate.swift in Sources */,
+				CB20B8282467EA2300A68227 /* CustomTableViewCell.swift in Sources */,
 				CB20B8162467E84600A68227 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +354,7 @@
 		};
 		CB20B8252467E84900A68227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67CC16A63AD6BCF41FB82435 /* Pods-LoadingShimmerOnTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +372,7 @@
 		};
 		CB20B8262467E84900A68227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8ABB241EF54D81631E5BDD /* Pods-LoadingShimmerOnTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
